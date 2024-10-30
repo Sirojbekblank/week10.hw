@@ -52,13 +52,13 @@ int decimalToBinary(int n) {
 template <typename T>
 T midValue(T a,T b, T c) {
     T mid;
-    if(a>b && a<c || a<b && a>c) {
+    if((a>b && a<c) || (a<b && a>c)) {
         mid = a;
     }
-    if(b>a && b<c || b>c && a>b) {
+    else if((b>a && b<c) || (b>c && a>b)) {
         mid=b;
     }
-    if(c>a && c<b || c<a && b<c) {
+    else if((c>a && c<b) || (c<a && b<c)) {
         mid=c;
     }
     return mid;
