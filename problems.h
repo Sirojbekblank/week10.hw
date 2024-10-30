@@ -63,5 +63,3 @@ T midValue(T a,U b, V c) {
     }
     return mid;
 }
-    return mid;
-}
