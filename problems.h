@@ -49,8 +49,8 @@ int decimalToBinary(int n) {
 }
 
 // Problem 6
-template <typename T>
-T midValue(T a,T b, T c) {
+template <typename T,typename U, typename V>
+T midValue(T a,U b, V c) {
     T mid;
     if((a>b && a<c) || (a<b && a>c)) {
         mid = a;
@@ -61,5 +61,7 @@ T midValue(T a,T b, T c) {
     else if((c>a && c<b) || (c<a && b<c)) {
         mid=c;
     }
+    return mid;
+}
     return mid;
 }
