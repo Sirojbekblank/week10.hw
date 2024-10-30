@@ -55,7 +55,7 @@ T midValue(T a,T b, T c) {
     if(a>b && a<c || a<b && a>c) {
         mid = a;
     }
-    if(b>a && b<c || b>c && a<b) {
+    if(b>a && b<c || b>c && a>b) {
         mid=b;
     }
     if(c>a && c<b || c<a && b<c) {
